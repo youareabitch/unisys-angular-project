@@ -1,0 +1,15 @@
+<form [formGroup]="editorForm">
+    <div class="row">
+        <div class="col">
+            <label htmlFor="filterNo">Filter Transaction No</label>
+            <input pInputText id="filterNo" formControlName="filterNo" />
+        </div>
+        <div class="col">
+            <label htmlFor="filterDate">Filter Transaction Date</label>
+            <p-calendar id="filterDate" formControlName="filterDate" dateFormat="yy/mm/dd"></p-calendar>
+        </div>
+        <div class="col">
+            <p-button icon="pi pi-search" label="Filter" (onClick)="getData()"></p-button>
+        </div>
+    </div>
+</form>
