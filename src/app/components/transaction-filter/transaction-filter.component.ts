@@ -52,8 +52,6 @@ export class TransactionFilterComponent implements OnInit {
   }
 
   private checkEditorFormDirty() {
-    console.log(this.editorForm.value.filterDate?.toLocaleDateString());
-
     if (!isEqual(this.originData, this.editorForm.getRawValue())) {
       this.editorForm.markAsDirty();
     } else {

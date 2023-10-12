@@ -58,7 +58,6 @@ export class TransactionService {
       }
     }
 
-    console.log(result);
     return of(result).pipe(delay(Util.getRandomNumber(500, 2000)));
   }
 }
